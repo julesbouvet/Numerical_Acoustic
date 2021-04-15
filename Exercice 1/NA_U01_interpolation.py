@@ -43,7 +43,7 @@ f_smp_interp_n = n*f_smp
 # new time samples
 t_interp = np.linspace(0., 1., f_smp_interp_n+1)
 # initializing interpolated data
-y_interp = np.zeros((f_smp_interp_n+1)) 
+y_interp = np.zeros((f_smp_interp_n+1))
 y_interp[::n] = y_smp  # Entering known data before the interpolation (the samples to be interpolated are left as zeros)
 
 # linear interpolation of the remaining samples
